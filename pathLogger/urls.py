@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.PathLoggerView.as_view()),
-    path('safe/', views.PathLoggerView.as_view()),
+    path('safe/', views.PathLoggerViewSafe.as_view()),
 ]
