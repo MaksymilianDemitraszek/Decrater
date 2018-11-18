@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c56661-d858-4449-b8b0-f7018ea49959" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dec/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dec/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathLogger/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathLogger/urls.py" afterDir="false" />
+    <list default="true" id="a6c56661-d858-4449-b8b0-f7018ea49959" name="Default Changelist" comment="crosheaders">
       <change beforePath="$PROJECT_DIR$/pathResolver/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathResolver/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +35,12 @@
         <counts>
           <entry key="gitignore" value="6" />
           <entry key="py" value="7956" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="17" />
           <entry key="Python" value="7956" />
         </counts>
       </usages-collector>
@@ -67,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dec/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="57" column="23" selection-start-line="56" selection-end-line="57" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -89,14 +87,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pathResolver/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
-                <marker date="1542544611873" expanded="true" signature="308:313" ph="..." />
+                <marker date="1542545521456" expanded="true" signature="295:300" ph="..." />
               </folding>
             </state>
           </provider>
@@ -130,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pathLogger/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="255">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
                 <marker date="1542530371013" expanded="true" signature="429:438" ph="..." />
@@ -168,8 +166,8 @@
         <option value="$PROJECT_DIR$/pathLogger/serializers.py" />
         <option value="$PROJECT_DIR$/pathLogger/urls.py" />
         <option value="$PROJECT_DIR$/pathResolver/models.py" />
-        <option value="$PROJECT_DIR$/pathResolver/views.py" />
         <option value="$PROJECT_DIR$/dec/settings.py" />
+        <option value="$PROJECT_DIR$/pathResolver/views.py" />
       </list>
     </option>
   </component>
@@ -301,11 +299,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" sideWeight="0.50209206" side_tool="true" weight="0.13913691" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.13913691" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.13913691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.4985119" visible="true" weight="0.1442623" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.4985119" visible="true" weight="0.1442623" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5014881" side_tool="true" weight="0.31311476" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.18032786" />
@@ -340,6 +338,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="crosheaders" />
+    <option name="LAST_COMMIT_MESSAGE" value="crosheaders" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/manage.py">
@@ -466,28 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pathLogger/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1542530371013" expanded="true" signature="429:438" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pathLogger/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1542537107451" expanded="true" signature="122:123" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pathResolver/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -495,27 +475,6 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <marker date="1542536256607" expanded="true" signature="327:328" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pathLogger/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pathResolver/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-            <marker date="1542544611873" expanded="true" signature="308:313" ph="..." />
           </folding>
         </state>
       </provider>
@@ -534,8 +493,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dec/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pathLogger/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pathLogger/views.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="57" column="23" selection-start-line="56" selection-end-line="57" selection-end-column="23" />
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1542530371013" expanded="true" signature="429:438" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pathLogger/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1542537107451" expanded="true" signature="122:123" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pathResolver/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+            <marker date="1542545521456" expanded="true" signature="295:300" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
