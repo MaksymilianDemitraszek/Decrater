@@ -6,8 +6,8 @@ from math import cos, sqrt
 class ResolvedPathManager(models.Manager):
     def impose(self):
         unresolved_paths = PathBlock.objects.filter(is_resolved=False)
-        path_stacks = ResolvedPath.objects.all()
         for new_path in unresolved_paths:
+            path_stacks = ResolvedPath.objects.all()
 
             exists = False
             for path_stack in path_stacks:
@@ -22,8 +22,6 @@ class ResolvedPathManager(models.Manager):
                     lngEnd=new_path.lngEnd,
                 )
                 new_stack.save(using=self._db)
-                path_stacks.union(new_stack)
-
         unresolved_paths.update(is_resolved=True)
         for p in path_stacks:
             p.refresh_color()
