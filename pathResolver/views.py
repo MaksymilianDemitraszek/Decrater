@@ -13,7 +13,7 @@ class PathResolverView(APIView):
         serializer = ResolvedPathSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-class PathResolverViewSafe(APIView):
+class PathResolverViewSafe(generics.ListAPIView):
     def get(self, request):
         queryset = ResolvedPath.objects.all()
         serializer = ResolvedPathSerializer(queryset, many=True)
