@@ -10,9 +10,10 @@ import json
 from pathLogger import serializers
 
 class PathLoggerView(APIView):
+
     def post(self, request):
-        data = json.dumps(request.data)
-        serializer = serializers.PathBlockSerializer(data=data)
+        
+        serializer = serializers.PathBlockSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(status=status.HTTP_201_CREATED)
