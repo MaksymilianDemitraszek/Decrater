@@ -4,6 +4,16 @@ from django.db import models
 from django.db import models
 from django.db.models import Q, Max
 
+class PathCell(models.Model):
+    deviceId = models.TextField()
+    timestamp = models.BigIntegerField()
+    lat = models.FloatField()
+    lng = models.FloatField()
+    packageId = models.IntegerField()
+    x = models.FloatField()
+    y = models.FloatField()
+    z = models.FloatField()
+
 
 class PathBlockManager(models.Manager):
     use_in_migrations = True

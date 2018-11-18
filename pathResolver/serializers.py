@@ -18,9 +18,4 @@ class ResolvedPathSerializer(serializers.ModelSerializer):
 
 
 
-class PathListSerializer(serializers.Serializer):
-    pathList = ResolvedPathSerializer(read_only=True, many=True)
-
-
-
 
