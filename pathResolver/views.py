@@ -11,9 +11,8 @@ from pathLogger import serializers
 
 
 class PathResolverView(APIView):
-    def get(self, request)
+    def get(self, request):
         queryset = ResolvedPath.objects.impose()
-
         serializer = PathListSerializer(queryset)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
