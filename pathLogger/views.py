@@ -12,7 +12,7 @@ from pathLogger import serializers
 class PathLoggerView(APIView):
 
     def post(self, request):
-        data = request.data
+        data = request.data.copy()
         data['quakeEvents'] = ast.literal_eval(data['quakeEvents']) #it should be in serializer
         serializer = serializers.PathBlockSerializer(data=data)
         if serializer.is_valid():
