@@ -60,7 +60,10 @@ class ResolvedPath(models.Model):
             x += delta.x
             y += delta.y
             z += delta.z
-        return {'x': x/len(deltas), 'y': y/len(deltas), 'z': z/len(deltas)}
+        try:
+            return {'x': x/len(deltas), 'y': y/len(deltas), 'z': z/len(deltas)}
+        except:
+            return {'x': 1, 'y': 1, 'z': 1}
 
     def refresh_color(self):
         avg_d = self.average_delta()
