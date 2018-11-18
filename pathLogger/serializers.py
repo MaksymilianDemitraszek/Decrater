@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from pathLogger.models import PathBlock, QuakeDelta
+import json, base64
 
 
 class QuakeEventSerializer(serializers.ModelSerializer):
@@ -9,7 +10,8 @@ class QuakeEventSerializer(serializers.ModelSerializer):
 
 
 class PathBlockSerializer(serializers.ModelSerializer):
-    quakeEvents = QuakeEventSerializer(many=True, required=False)
+    # quakeEvents = QuakeEventSerializer(many=True, required=False)
+    quakeEvents = serializers.CharField()
 
     class Meta:
         model = PathBlock
@@ -20,7 +22,9 @@ class PathBlockSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         path_block_data, quake_events = self._split_to_paht_and_events(**validated_data)
-        
+
+        quake_events = json.loads(base64.b64decode(quake_events))
+
         delta = QuakeDelta.objects.create_delta_from_event_list(path_block_data['deviceId'], quake_events,)
         path_block = PathBlock.objects.create(quakeDelta=delta, **path_block_data)
         return path_block
