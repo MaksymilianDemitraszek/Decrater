@@ -81,7 +81,6 @@ class PathCellSerializer(serializers.ModelSerializer):
             latStart = first.lat,
             lngStart = first.lng,
             latEnd = last.lat,
-            lngEnd = last.lng,
-                                              )
+            lngEnd = last.lng,                     )
         return path_block
 
