@@ -11,6 +11,3 @@ class PathResolverView(APIView):
         serializer = ResolvedPathSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-
-
-

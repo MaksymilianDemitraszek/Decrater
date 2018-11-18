@@ -15,12 +15,13 @@ class ResolvedPathManager(models.Manager):
                     exists = True
                     path_stack.add_to_stack(new_path.quakeDelta)
             if not exists:
-                new_stack = ResolvedPath.objects.create(
+                new_stack = ResolvedPath(
                     latStart=new_path.latStart,
                     lngStart=new_path.lngStart,
                     latEnd=new_path.latEnd,
                     lngEnd=new_path.lngEnd,
                 )
+                new_stack.save(using=self._db)
                 path_stacks.union(new_stack)
 
         unresolved_paths.update(is_resolved=True)
@@ -29,6 +30,7 @@ class ResolvedPathManager(models.Manager):
         return path_stacks
 
 class ResolvedPath(models.Model):
+
     timestamp = models.DateTimeField(auto_now_add=True)
     latStart = models.FloatField()
     lngStart = models.FloatField()
@@ -66,7 +68,7 @@ class ResolvedPath(models.Model):
         avg_d = self.average_delta()
         vector_2d = sqrt((avg_d['x']*avg_d['x'])+(avg_d['y']*avg_d['y']))
         vector_3d = sqrt((vector_2d*vector_2d)+(avg_d['z']*avg_d['z']))
-        color = vector_3d*0.143
+        color = vector_3d*0.071
         if color > 1:
             color = 1
         self.color = color
