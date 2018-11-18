@@ -22,7 +22,6 @@ class PathBlockSerializer(serializers.ModelSerializer):
         path_block_data, quake_events = self._split_to_paht_and_events(**validated_data)
         delta = QuakeDelta.objects.create_delta_from_event_list(path_block_data['deviceId'], quake_events,)
         path_block = PathBlock.objects.create(quakeDelta=delta, **path_block_data)
-
         return path_block
 
     def _get_event_instances_list(self, event_data_list, parent_path):

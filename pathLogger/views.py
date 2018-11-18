@@ -10,6 +10,11 @@ from pathLogger import serializers
 
 class PathLoggerView(APIView):
     def post(self, request):
+
+        text_file = open("Output.txt", "w")
+        text_file.write(str(request.data))
+        text_file.close()
+
         serializer = serializers.PathBlockSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
