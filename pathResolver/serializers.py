@@ -16,6 +16,8 @@ class ResolvedPathSerializer(serializers.ModelSerializer):
         path = ResolvedPath.objects.get(id=self.id)
         return path.average_delta()
 
+
+
 class PathListSerializer(serializers.Serializer):
     pathList = ResolvedPathSerializer(read_only=True, many=True)
 
