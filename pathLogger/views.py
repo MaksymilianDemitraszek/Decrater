@@ -14,7 +14,7 @@ class PathLoggerView(APIView):
     def post(self, request):
         data = request.data
         data['quakeEvents'] = ast.literal_eval(data['quakeEvents']) #it should be in serializer
-        serializer = serializers.PathBlockSerializer(data=request.data)
+        serializer = serializers.PathBlockSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
             return Response(status=status.HTTP_201_CREATED)

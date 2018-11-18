@@ -24,6 +24,7 @@ class PathBlock(models.Model):
     lngStart = models.FloatField()
     latEnd = models.FloatField()
     lngEnd = models.FloatField()
+    is_resolved = models.BooleanField(default=False)
     quakeDelta = models.OneToOneField('QuakeDelta', on_delete=models.CASCADE)
 
 
@@ -38,6 +39,7 @@ class QuakeDeltaManager(models.Manager):
                 z=abs(last_benchmark.z - average_inclination['z']),
             )
             delta.save(using=self._db)
+
         else:
             delta = self.model(
                 x=abs(average_inclination['x']),
@@ -56,7 +58,6 @@ class QuakeDeltaManager(models.Manager):
             z += quake['z']
             y += quake['y']
         return {'x': x/len(quake_event_list), 'y': y/len(quake_event_list), 'z': z/len(quake_event_list)}
-
 
 class QuakeDelta(models.Model):
     objects = QuakeDeltaManager()
