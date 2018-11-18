@@ -6,8 +6,8 @@ from pathResolver.serializers import ResolvedPathSerializer
 
 
 class PathResolverView(APIView):
-    def get(self, request):
-        queryset = ResolvedPath.objects.impose()
+    def get(self, request, last=0):
+        queryset = ResolvedPath.objects.impose()[last-1:]
         serializer = ResolvedPathSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
