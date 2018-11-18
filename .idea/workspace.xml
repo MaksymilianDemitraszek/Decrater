@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6c56661-d858-4449-b8b0-f7018ea49959" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pathLogger/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pathLogger/migrations/0002_auto_20181118_1008.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathLogger/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathLogger/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathLogger/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathLogger/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathLogger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathLogger/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathResolver/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathResolver/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathResolver/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathResolver/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathResolver/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathResolver/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pathResolver/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
@@ -28,14 +30,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="py" value="65" />
+          <entry key="py" value="66" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="65" />
+          <entry key="Python" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -57,43 +59,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pathLogger/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-709">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1542531978767" expanded="true" signature="639:640" ph="..." />
-                <marker date="1542531978767" expanded="true" signature="1138:2349" ph="..." />
-                <marker date="1542531978767" expanded="true" signature="1212:2023" ph="..." />
-                <marker date="1542531978767" expanded="true" signature="2076:2085" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pathLogger/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1542530371013" expanded="true" signature="429:438" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pathLogger/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="74" column="78" selection-start-line="74" selection-start-column="78" selection-end-line="74" selection-end-column="78" />
+            <state relative-caret-position="439">
+              <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <marker date="1542532274663" expanded="true" signature="122:123" ph="..." />
+                <marker date="1542532319809" expanded="true" signature="122:123" ph="..." />
               </folding>
             </state>
           </provider>
@@ -102,10 +75,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pathResolver/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="69" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pathResolver/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1542525231654" expanded="true" signature="134:1067" ph="..." />
               </folding>
             </state>
           </provider>
@@ -138,9 +124,9 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/pathResolver/serializers.py" />
         <option value="$PROJECT_DIR$/pathLogger/views.py" />
-        <option value="$PROJECT_DIR$/pathResolver/views.py" />
         <option value="$PROJECT_DIR$/pathLogger/models.py" />
         <option value="$PROJECT_DIR$/pathLogger/serializers.py" />
+        <option value="$PROJECT_DIR$/pathResolver/views.py" />
       </list>
     </option>
   </component>
@@ -286,8 +272,8 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5014881" side_tool="true" weight="0.31311476" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.18032786" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.66220236" visible="true" weight="0.21639344" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4985119" weight="0.31311476" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66220236" weight="0.21639344" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4985119" visible="true" weight="0.31311476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -332,9 +318,9 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pathLogger/serializers.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/pathResolver/views.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -473,16 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pathResolver/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="22" selection-end-column="28" />
-          <folding>
-            <marker date="1542525231654" expanded="true" signature="134:1067" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tokenize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -490,30 +466,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pathResolver/views.py">
+    <entry file="file://$PROJECT_DIR$/pathResolver/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="344">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1542525231654" expanded="true" signature="134:1067" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pathLogger/views.py">
+    <entry file="file://$PROJECT_DIR$/pathResolver/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="69" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1542530371013" expanded="true" signature="429:438" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pathLogger/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-709">
+        <state relative-caret-position="-590">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -525,13 +501,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pathLogger/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1542530371013" expanded="true" signature="429:438" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pathLogger/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="74" column="78" selection-start-line="74" selection-start-column="78" selection-end-line="74" selection-end-column="78" />
+        <state relative-caret-position="439">
+          <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <marker date="1542532274663" expanded="true" signature="122:123" ph="..." />
+            <marker date="1542532319809" expanded="true" signature="122:123" ph="..." />
           </folding>
         </state>
       </provider>
