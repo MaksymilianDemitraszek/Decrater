@@ -11,7 +11,9 @@ from pathLogger import serializers
 class PathLoggerView(APIView):
 
     def post(self, request):
+        print(request)
         serializer = serializers.PathBlockSerializer(data=request.data)
+        print(request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(status=status.HTTP_201_CREATED)
