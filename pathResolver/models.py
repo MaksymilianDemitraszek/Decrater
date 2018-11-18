@@ -1,14 +1,14 @@
 from django.db import models
 from pathLogger.models import PathBlock
 from math import cos, sqrt
+from django.db.models import Q
 
 
 class ResolvedPathManager(models.Manager):
     def impose(self):
-        unresolved_paths = PathBlock.objects.filter(is_resolved=False)
+        unresolved_paths = PathBlock.objects.filter(is_resolved=False).exclude(Q(latStart=1000) | Q(lngStart=1000))
         for new_path in unresolved_paths:
             path_stacks = ResolvedPath.objects.all()
-
             exists = False
             for path_stack in path_stacks:
                 if path_stack.does_belong(new_path):
@@ -23,12 +23,12 @@ class ResolvedPathManager(models.Manager):
                 )
                 new_stack.save(using=self._db)
         unresolved_paths.update(is_resolved=True)
+        path_stacks = ResolvedPath.objects.all()
         for p in path_stacks:
             p.refresh_color()
         return path_stacks
 
 class ResolvedPath(models.Model):
-
     timestamp = models.DateTimeField(auto_now_add=True)
     latStart = models.FloatField()
     lngStart = models.FloatField()
@@ -86,5 +86,3 @@ class ResolvedDelta(models.Model):
     x = models.FloatField()
     y = models.FloatField()
     z = models.FloatField()
-
-
